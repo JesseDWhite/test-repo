@@ -1,3 +1,8 @@
 body {
-    background-color: green;
+    background-color:#424242 ;
+    color: white;
+    text-align: center;
+}
+form {
+    text-align: start;
 }
