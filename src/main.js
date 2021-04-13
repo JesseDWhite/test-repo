@@ -5,7 +5,7 @@ import './css/styles.css';
 import Triangle from './triangle.js';
 
 $(document).ready(function () {
-    ("form").submit(function (event) {
+    $("form").submit(function (event) {
         event.preventDefault();
 
         const lengthOne = $("#side1").val();
@@ -15,7 +15,7 @@ $(document).ready(function () {
         const triangle = new Triangle(lengthOne, lengthTwo, lengthThree);
 
         const response = triangle.checkType();
-        $("#response").append(`<p>${response}</p>`);
+        $("#response").html(`<p>${response}</p>`);
 
     });
 });
