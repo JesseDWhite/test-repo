@@ -10,5 +10,7 @@ Triangle.prototype.checkType = function () {
     }
     else if ((this.side1 !== this.side2) && ((this.side1 !== this.side3)) && ((this.side2 !== this.side3))) {
         return "scalene triangle for sure. Full stop."
+    } else if ((this.side1 === this.side2) || ((this.side1 === this.side3)) || ((this.side2 === this.side3))) {
+        return "isosceles triangle to boot."
     }
 }
