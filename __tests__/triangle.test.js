@@ -8,4 +8,8 @@ describe('Triangle', () => {
         expect(triangle.side2).toEqual(4);
         expect(triangle.side3).toEqual(5);
     });
+    test('should correctly determine if three sides are not a triangle', () => {
+        const notTriangle = new Triangle(3, 9, 22);
+        expect(notTriangle.checkType()).toEqual("not a triangle");
+    });
 });
