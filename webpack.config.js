@@ -15,7 +15,7 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
-            title: 'template-repo',
+            title: 'test-repo',
             template: './src/index.html',
             inject: 'head'
         })
