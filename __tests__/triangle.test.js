@@ -16,8 +16,12 @@ describe('Triangle', () => {
         const scalTriangle = new Triangle(4, 5, 7);
         expect(scalTriangle.checkType()).toEqual("scalene triangle for sure. Full stop.");
     })
-    test('should correctly determine whether three sides make a equalateral triangle', () => {
+    test('should correctly determine whether two sides make an isosceles triangle', () => {
         const isoscelesTriangle = new Triangle(5, 5, 7);
         expect(isoscelesTriangle.checkType()).toEqual("isosceles triangle to boot.");
+    });
+    test('should correctly determine whether three sides make an equalateral triangle', () => {
+        const equalTrianle = new Triangle(5, 5, 5);
+        expect(equalTrianle.checkType()).toEqual("equalateral all the way.");
     });
 });
