@@ -1,5 +1,5 @@
 import { TestScheduler } from 'jest-cli';
-import Triangle from './../src/triangle.js';
+import Triangle from './../src/js/triangle.js';
 
 describe('Triangle', () => {
     test('should correctly create a triangle object with three side lenghts', () => {
